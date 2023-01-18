@@ -12,7 +12,8 @@ async function randomAmiibo () {
     document.getElementById('charName').innerText = data.amiibo[random].name
     document.getElementById('gameSeries').innerText = `Game Series: ${data.amiibo[random].gameSeries}`
     document.getElementById('amiiboSeries').innerText = `amiibo Series: ${data.amiibo[random].amiiboSeries}`
-    document.querySelector('img').src = data.amiibo[random].image
+    document.getElementById('charImg').style.display = 'block';
+    document.getElementById('charImg').src = data.amiibo[random].image
        
     console.log(data.amiibo[random])
 }
@@ -36,7 +37,8 @@ function displayAmiibo(index) {
     document.getElementById('amiiboSeries').innerText = `amiibo Series: ${charArr[index].amiiboSeries}`
     document.getElementById('previous').style.display = 'inline-block'
     document.getElementById('next').style.display = 'inline-block'
-    document.querySelector('img').src = charArr[index].image
+    document.getElementById('charImg').style.display = 'block';
+    document.getElementById('charImg').src = charArr[index].image
     console.log(data.amiibo)
     console.log(charArr)
 }    

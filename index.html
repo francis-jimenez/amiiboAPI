@@ -9,13 +9,18 @@
 </head>
 <body>
     <main>
-        <h1>amiibo Viewer</h1>
-        <input type="text" name="search" placeholder="Character name">
-        <button name="search" id="search">Search</button>
-        <button name="random" id="random">Random Amiibo</button>
-        <div>
+        <nav>
+            <a href="#"><img id="logo" src="amiibo.svg" alt=""></a>
+            <h1>amiibo Viewer</h1>
+        </nav>
+        <div class="mainAmiiboSearch">
+            <input type="text" name="search" placeholder="Character name">
+            <button name="search" id="search">Search</button>
+            <button name="random" id="random">Random Amiibo</button>
+        </div>
+        <div class="characterInfo">
             <h2 id="charName"></h2>
-            <img src="">
+            <img id="charImg" src="">
             <h4 id="gameSeries"></h4>
             <h4 id="amiiboSeries"> </h4>
             <button id="previous">Previous</button>

@@ -344,18 +344,73 @@
    * Add the correct display in IE 10.
    */
   
+   @font-face {
+       font-family: nintendo;
+       src: url(spritendo.otf);
+   }
+   
+   * {
+     font-family: nintendo;
+   }
   [hidden] {
     display: none;
   }
 
+  body {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    background-color: red;
+  }
 
   main {
     display: flex;
     justify-content: center;  
     align-items: center;
     flex-direction: column;
+    width: 80%;
+    height: 100vh;
+    min-height: 100vh;
+    overflow: auto;
+    background-color: white;
   }
 
- #previous, #next {
+  .mainAmiiboSearch {
+    display: flex;
+    justify-content: center;
+  }
+
+  .characterInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .characterInfo > img {
+    height: auto;
+    max-width: 300px;
+  }
+
+  .characterInfo > * {
+    margin: 5% 0;
+  }
+
+
+
+ #previous, #next{
     display: none;
+ }
+
+ #charImg {
+  display: none;
+ }
+
+ #logo {
+  width: 300px;
+  height: 90px;
+ }
+
+ button {
+
  }
